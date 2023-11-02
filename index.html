@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatitble" content="IE=edge">
+        <meta name="viewport" content="width=device-width" initial scale="1.0">
+        <title>Devlopment portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <h1>nishat</h1>
+                <dv class="nav-menu" id="navmenus">
+                    <span onclick="hideMenus()">X</span>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">service</a></li>
+                        <li><a href="#">design</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><input type="text" name="search"><input type="submit" name="submit" value="search"></li>
+                    </ul>
+                </dv>
+                <span onclick="openMenus()">Menu</span>
+            </nav>
+            <div class="discription">
+                <h1>Web Devlopment</h1>
+                <p>Web development is the work involved in developing a website for the Internet (World Wide Web)<br>
+                    or an intranet (a private network). </p>
+                <P>Web development can range from developing a simple single static page of plain text to complex web<br>
+                    applications, electronic businesses, and social network services.</P>
+            </div>
+            <div class="login">
+                <form action="">
+                <h2>Login</h2>
+                <div class="output-box">
+                    <ion-icon name="bag-outline"></ion-icon>
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="output-box">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" required/>
+                    <label for="">Password</label>
+                </div>
+                <div class="forget">
+                    <label for=""><input type="checkbox"> Remember me</label>
+                    <a href="#"> forget password</a>
+                </div>
+                <button>Log in</button>
+                <div class="register">
+                    <p> Don't have an account?<a href="#"> Register</a></p>
+                </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            var navmenus=document.getElementById('navmenus');
+                function openMenus(){
+                navmenus.style.right="0";
+            }
+            function hideMenus(){
+            navmenus.style.right="-300px";
+            }
+        </script>
+    </body>
+</html>
